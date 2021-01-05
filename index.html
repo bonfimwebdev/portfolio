@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="/style.css">
+    <link rel="sortcut icon" href="./img/logo.png">
     <title>Bonfim Web Dev</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -16,7 +18,7 @@
                 </div>
             </div>
 
-            <div class="navDivider">
+            <div class="navDivider" id="navLinksContainer">
                 <div class="navItem">
                     <a href="#aboutContainer">Sobre mim</a>
                 </div>
@@ -34,65 +36,119 @@
     
     <main>
         <div id="aboutContainer">
-            <div class="aboutItem" id="textContent">
+            <div class="aboutItem" id="leftContent">
+                <p id="aboutText"><span id="aboutIntroText">Olá! Bem vindos ao meu portfólio.</span><br/>Me chamo Gabriel e sou estudante de Ciências da Computação pela Universidade do Estado da Bahia. <br/>
+                    Tenho experiência com desenvolvimento de sites estáticos utilizando HTML5, CSS3 e Bootstrap, sempre procurando dominar mais possibilidades e tecnologias. <br/>
+                    Confira abaixo os meus trabalhos mais importantes. 
+                </p>
 
+                <div id="socialContainer">
+                    <div id="socialLinksContainer">
+                        <a href="mailto:bonfimwebdev@gmail.com" target="_blank"><img src="./img/email-icon.png" alt="Email icon"></a>
+                        <a href="https://github.com/bonfimwebdev" target="_blank"><img src="./img/github-icon.png" alt="Github icon"></a>
+                        <a href="https://linkedin.com/in/gabrielbmendes" target="_blank"><img src="./img/linkedin-icon.png" alt="Linkedin icon"></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="aboutItem" id="pictureContent">
+            <div class="aboutItem" id="rightContent">
                 <img src="./img/profile-picture.png" alt="Rosto do Gabriel Bonfim">
             </div>
         </div>
 
         <div id="portfolioContainer">
             <div class="portfolioItem">
-                <div class="innerPortfolioPicture">
+                <div class="innerPortfolioPicture" id="chuvaIncPicture">
+                    <div class="hiddenPortfolioLinks">
+                        <div class="hiddenLinks">
+                            <a href="https://chuvaincdemonstration.netlify.app/" target="_blank">Acessar site</a>
+                        </div>
+
+                        <div class="hiddenLinks">
+                            <a href="https://github.com/bonfimwebdev/exerciciochuva" target="_blank">Ver código</a>
+                        </div>
+                    </div>
 
                 </div>
 
                 <div class="innerPortfolioText">
-                    
+                    <p class="innerText">
+                    <span class="innerTextTitle">Nome: </span>Protótipo Chuva Inc <br/>
+                    <span class="innerTextTitle">Descrição: </span>Página criada com base em protótipo Figma, como etapa de processo seletivo. <br/>
+                    <span class="innerTextTitle">Tecnologias usadas: </span>HTML5, CSS3, JavaScript. 
+                    </p>
                 </div>
             </div>
 
             <div class="portfolioItem">
-                <div class="innerPortfolioPicture">
+                <div class="innerPortfolioPicture" id="rihannaTributePicture">
+                    <div class="hiddenPortfolioLinks">
+                        <div class="hiddenLinks">
+                            <a href="https://rihannatribute.netlify.app/" target="_blank">Acessar site</a>
+                        </div>
 
+                        <div class="hiddenLinks">
+                            <a href="https://github.com/bonfimwebdev/rihannatributepage" target="_blank">Ver código</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="innerPortfolioText">
-                    
+                    <p class="innerText">
+                        <span class="innerTextTitle">Nome: </span>Rihanna Tribute <br/>
+                        <span class="innerTextTitle">Descrição: </span>Página tributo para a artista Rihanna, contendo informações sobre sua carreira. <br/>
+                        <span class="innerTextTitle">Tecnologias usadas: </span>HTML5, CSS3, Bootstrap.
+                    </p>
+
                 </div>
             </div>
 
             <div class="portfolioItem">
-                <div class="innerPortfolioPicture">
+                <div class="innerPortfolioPicture" id="animeflixPicture">
+                    <div class="hiddenPortfolioLinks">
+                        <div class="hiddenLinks">
+                            <a href="https://animeflixbr.netlify.app/" target="_blank">Acessar site</a>
+                        </div>
 
+                        <div class="hiddenLinks">
+                            <a href="https://github.com/bonfimwebdev/animeflix" target="_blank">Ver código</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="innerPortfolioText">
-                    
+                    <p class="innerText">
+                        <span class="innerTextTitle">Nome: </span>AnimeFlix <br/>
+                        <span class="innerTextTitle">Descrição: </span>Réplica do serviço de streaming Netflix, voltada para animes. <br/>
+                        <span class="innerTextTitle">Tecnologias usadas: </span>HTML5, CSS3, JQuery (através do framework Owl)
+                    </p>
                 </div>
             </div>
 
             <div class="portfolioItem">
-                <div class="innerPortfolioPicture">
+                <div class="innerPortfolioPicture" id="formularioPicture">
+                    <div class="hiddenPortfolioLinks">
+                        <div class="hiddenLinks">
+                            <a href="https://formtrabalheconosco.netlify.app/" target="_blank">Acessar site</a>
+                        </div>
 
+                        <div class="hiddenLinks">
+                            <a href="https://github.com/bonfimwebdev/formulario" target="_blank">Ver código</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="innerPortfolioText">
-                    
+                    <p class="innerText">
+                        <span class="innerTextTitle">Nome: </span>Trabalhe Conosco <br/>
+                        <span class="innerTextTitle">Descrição: </span>Formulário de envio de currículo da empresa fictícia Lorem Ipsum. <br/>
+                        <span class="innerTextTitle">Tecnologias usadas: </span>HTML5, CSS3. 
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div id="socialContainer">
-            <div id="linksContainer">
-                <a href="mailto:bonfimwebdev@gmail.com" target="_blank"><img src="./img/email-icon.png" alt="Email icon"></a>
-                <a href="https://github.com/bonfimwebdev" target="_blank"><img src="./img/github-icon.png" alt="Github icon"></a>
-                <a href="https://linkedin.com/in/gabrielbmendes" target="_blank"><img src="./img/linkedin-icon.png" alt="Linkedin icon"></a>
-            </div>
-
-        </div>
+        
     </main>
 
     <footer>
