@@ -42,12 +42,10 @@
                     Confira abaixo os meus trabalhos mais importantes. 
                 </p>
 
-                <div id="socialContainer">
-                    <div id="socialLinksContainer">
-                        <a href="mailto:bonfimwebdev@gmail.com" target="_blank"><img src="./img/email-icon.png" alt="Email icon"></a>
-                        <a href="https://github.com/bonfimwebdev" target="_blank"><img src="./img/github-icon.png" alt="Github icon"></a>
-                        <a href="https://linkedin.com/in/gabrielbmendes" target="_blank"><img src="./img/linkedin-icon.png" alt="Linkedin icon"></a>
-                    </div>
+                <div id="socialLinksContainer">
+                    <a href="https://github.com/bonfimwebdev" target="_blank"><img src="./img/github-icon.png" alt="Github icon"></a>
+                    <a href="https://linkedin.com/in/gabrielbmendes" target="_blank"><img src="./img/linkedin-icon.png" alt="Linkedin icon"></a>
+                    <a href="mailto:bonfimwebdev@gmail.com" target="_blank"><img src="./img/email-icon.png" alt="Email icon"></a>
                 </div>
             </div>
 
@@ -57,28 +55,6 @@
         </div>
 
         <div id="portfolioContainer">
-            <div class="portfolioItem">
-                <div class="innerPortfolioPicture" id="chuvaIncPicture">
-                    <div class="hiddenPortfolioLinks">
-                        <div class="hiddenLinks">
-                            <a href="https://chuvaincdemonstration.netlify.app/" target="_blank">Acessar site</a>
-                        </div>
-
-                        <div class="hiddenLinks">
-                            <a href="https://github.com/bonfimwebdev/exerciciochuva" target="_blank">Ver código</a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="innerPortfolioText">
-                    <p class="innerText">
-                    <span class="innerTextTitle">Nome: </span>Protótipo Chuva Inc <br/>
-                    <span class="innerTextTitle">Descrição: </span>Página criada com base em protótipo Figma, como etapa de processo seletivo. <br/>
-                    <span class="innerTextTitle">Tecnologias usadas: </span>HTML5, CSS3, JavaScript. 
-                    </p>
-                </div>
-            </div>
 
             <div class="portfolioItem">
                 <div class="innerPortfolioPicture" id="rihannaTributePicture">
@@ -141,14 +117,61 @@
                 <div class="innerPortfolioText">
                     <p class="innerText">
                         <span class="innerTextTitle">Nome: </span>Trabalhe Conosco <br/>
-                        <span class="innerTextTitle">Descrição: </span>Formulário de envio de currículo da empresa fictícia Lorem Ipsum. <br/>
+                        <span class="innerTextTitle">Descrição: </span>Formulário de envio de currículo para a empresa fictícia Lorem Ipsum. <br/>
+                        <span class="innerTextTitle">Tecnologias usadas: </span>HTML5, CSS3. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="portfolioItem">
+                <div class="innerPortfolioPicture" id="huddlePicture">
+                    <div class="hiddenPortfolioLinks">
+                        <div class="hiddenLinks">
+                            <a href="https://frontendmentor-huddlelandingpage.netlify.app/" target="_blank">Acessar site</a>
+                        </div>
+
+                        <div class="hiddenLinks">
+                            <a href="https://github.com/bonfimwebdev/hfmsinglelandingpage" target="_blank">Ver código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerPortfolioText">
+                    <p class="innerText">
+                        <span class="innerTextTitle">Nome: </span>Huddle <br/>
+                        <span class="innerTextTitle">Descrição: </span>Landing page criada como projeto do site Frontend Mentor. <br/>
                         <span class="innerTextTitle">Tecnologias usadas: </span>HTML5, CSS3. 
                     </p>
                 </div>
             </div>
         </div>
 
-        
+        <div id="socialContainer">
+            <div id="contactFormContainer">
+                <div class="contactFormItem">
+                    <p id="contactFormTitle">Deixe uma mensagem abaixo!</p><br/>
+                </div>
+
+                <div class="contactFormItem">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="f51e573d-fb02-4cf4-b12f-73c037ad2a1a"> 
+                        
+                        <label for="nomeContato">Nome</label><br/>
+                        <input type="text" name="name" required maxlength="30" minlength="2"><br/>
+                        
+                        <label for="emailContato">E-mail</label><br/>
+                        <input type="text" name="email"><br/>
+                        
+                        <label for="mensagemContato">Mensagem</label><br/>
+                        <textarea name="message"></textarea> <br/><br/>
+                        
+                        <!--<input type="hidden" name="redirectTo" value="https://example.com/contact/success">-->
+                        <button>Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </main>
 
     <footer>

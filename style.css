@@ -46,10 +46,6 @@ nav {
     display: none;
 }
 
-#chuvaIncPicture {
-    background-image: url("/img/chuva1.png");
-}
-
 #rihannaTributePicture {
     background-image: url("/img/rihanna1.png");
 }
@@ -60,6 +56,10 @@ nav {
 
 #formularioPicture {
     background-image: url("/img/formulario1.png");
+}
+
+#huddlePicture {
+    background-image: url("/img/huddle.png");
 }
 
 /*************** Contato ***************/
