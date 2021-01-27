@@ -1,11 +1,37 @@
+body {
+    background: url("./img/desktop-background.png") fixed;
+    background-size: 100%;
+}
+
 a {
     text-decoration: none;
 }
 
+/******************** EFEITOS GLASS ********************/
+
+.glassMorph{
+    background-color: rgba(255, 255, 255, 0.3);  
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    margin: 15px;
+}
+
+.darkerGlassMorph{
+    background-color: rgba(216, 216, 216, 0.4);  
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    margin: 15px;
+}
+
 /******************** NAVBAR ********************/
+header {
+    
+}
+
 nav {
     display: flex;
     justify-content: space-between;
+    height: 10vh;
 }
 
 #navLinksContainer {
@@ -17,6 +43,9 @@ nav {
 
 
 /******************** MAIN ********************/
+main {
+    padding-top: 200px;
+}
 /*************** Sobre ***************/
 #aboutContainer {
     display: flex;
@@ -35,11 +64,15 @@ nav {
     justify-content: space-between;
 }
 
-.innerPortfolioPicture {
-    background-size: contain;
-    background-repeat: no-repeat;
+.portfolioItem {
     width: 40vw;
-    height: 50vh;
+}
+
+.innerPortfolioPicture {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 35vw;
+    height: 40vh;
 }
 
 .hiddenPortfolioLinks {
