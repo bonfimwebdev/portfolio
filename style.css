@@ -1,59 +1,111 @@
 body {
-    background: url("./img/desktop-background.png") fixed;
+    background:url("./img/desktop-background.png") fixed;
     background-size: 100%;
+    font-family: "Nunito";
 }
 
 a {
     text-decoration: none;
 }
 
-/******************** EFEITOS GLASS ********************/
+
+/******************** EFEITO GLASS ********************/
 
 .glassMorph{
-    background-color: rgba(255, 255, 255, 0.3);  
-    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);  
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
     padding: 20px;
     margin: 15px;
 }
 
-.darkerGlassMorph{
-    background-color: rgba(216, 216, 216, 0.4);  
-    backdrop-filter: blur(5px);
-    padding: 20px;
-    margin: 15px;
-}
 
-/******************** NAVBAR ********************/
-header {
-    
-}
+/******************** SIDEBAR ********************/
 
-nav {
+#sidebarContainer {
+    position: fixed;
     display: flex;
-    justify-content: space-between;
-    height: 10vh;
+    flex-direction: column;
+    width: 25vw;
 }
 
-#navLinksContainer {
-    width: 50vw;
+.sidebarInnerContainer {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 15px 20px 15px 45px;
+    color: rgb(221, 221, 221);
+    text-align: center;
+}
+
+#informationContainer {
+    padding: 10px 5px;
     align-items: center;
-    justify-content: space-between;
+    height: 30vh;
+}
+
+#sidebarLogo {
+    width: 130px;
+    filter: invert(1);
+}
+
+#textTitle {
+    font-size: 25px;
+    font-family: "Fira Sans";
+}
+
+#textContent {
+    font-size: 14.5px;
+}
+
+.socialIcon {
+    filter: invert(1);
+    width: 25px;
+    margin: 0 10px;
+}
+
+#skillContainer {
+    height: 50vh;
+    font-size: 16.5px;
+    font-family: "Fira Sans";
+}
+
+.outerSkillContainer {
+    border: 1px solid rgba(244,242,243,0.3);
+}
+
+.innerSkillContainer {
+    background: linear-gradient(110deg, rgba(244,242,243,0.6) 0%, rgba(221,221,221,1) 100%);
+}
+
+.outerSkillContainer, .innerSkillContainer {
+    height: 5vh;
+}
+
+#htmlContainer {
+    width: 80%;
+}
+
+#cssContainer {
+    width: 60%;
+}
+
+#btstpContainer {
+    width: 30%;
+}
+
+#jsContainer {
+    width: 20%;
 }
 
 
 /******************** MAIN ********************/
-main {
-    padding-top: 200px;
-}
-/*************** Sobre ***************/
-#aboutContainer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.aboutItem {
-    width: 30vw;
+#mainContainer {
+    width: 70vw;
+    margin-left: 370px;
 }
 
 /*************** Portfolio ***************/
@@ -65,19 +117,30 @@ main {
 }
 
 .portfolioItem {
-    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 85vh;
+    margin: 15px 20px 28px 10px;
+    color: rgb(221, 221, 221);
+    text-align: center;
 }
 
 .innerPortfolioPicture {
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 35vw;
-    height: 40vh;
+    width: 100%;
+    height: 70vh;
 }
 
-.hiddenPortfolioLinks {
-    display: none;
+.innerTextTitle {
+    font-family: "Fira Sans";
+    font-size: 18px;
 }
+
+/********** Imagens do portfolio **********/
 
 #rihannaTributePicture {
     background-image: url("/img/rihanna1.png");
@@ -95,11 +158,46 @@ main {
     background-image: url("/img/huddle.png");
 }
 
-/*************** Contato ***************/
-#socialContainer {
+/********** Links escondidos do portfolio **********/
+
+.hiddenPortfolioLinks {
+    background-color: rgba(221, 221, 221, 0.4);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 70.1vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
+
+.hiddenLinksContainer {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hiddenLinks {
+    display: block;
+    line-height: 50px;
+    background-color: rgb(51,99,136);
+    color: rgb(221, 221, 221);
+    font-family: "Fira Sans";
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.hiddenLinks:hover {
+    background-color: rgb(43,83,117);
+}
+
+.hiddenLinks:active {
+    background-color: rgb(22,43,61);
+    transform: scale(1.1);
+}
+
 
 /******************** CONFIGURAÇÕES TELAS PEQUENAS ********************/
