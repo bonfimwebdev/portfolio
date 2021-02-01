@@ -3,66 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="sortcut icon" href="./img/logo.png">
     <title>Bonfim Web Dev</title>
 </head>
 
 <body>
-    <header class="glassMorph">
-        <nav>
-            <div class="navDivider">
-                <div class="navItem" id="navLogo">
-                    <img src="./img/logo.png" alt="Bonfim Web Dev">
-                </div>
+    <nav id="sidebarContainer">
+        <div id="informationContainer" class="glassMorph sidebarInnerContainer">
+            <div class="sidebarItem">
+                <img id="sidebarLogo" src="./img/logo.png" alt="Bonfim Web Dev">
             </div>
-
-            <div class="navDivider" id="navLinksContainer">
-                <div class="navItem">
-                    <a href="#aboutContainer">Sobre mim</a>
-                </div>
-
-                <div class="navItem">
-                    <a href="#portfolioContainer">Portfolio</a>
-                </div>
-
-                <div class="navItem">
-                    <a href="#socialContainer">Contato</a>
-                </div>
-            </div>
-        </nav>
-    </header>
     
-    <main class="glassMorph">
-        <div id="aboutContainer" class="glassMorph">
-            <div class="aboutItem" id="leftContent">
-                <p id="aboutText"><span id="aboutIntroText">Olá! Bem vindos ao meu portfólio.</span><br/>Me chamo Gabriel e sou estudante de Ciências da Computação pela Universidade do Estado da Bahia. <br/>
-                    Tenho experiência com desenvolvimento de sites estáticos utilizando HTML5, CSS3 e Bootstrap, sempre procurando dominar mais possibilidades e tecnologias. <br/>
-                    Confira abaixo os meus trabalhos mais importantes. 
+            <div class="sidebarItem">
+                <p id="sidebarText">
+                    <span id="textTitle">Gabriel Bonfim</span><br/>
+                    <span id="textContent">Desenvolvedor Web Front-End Júnior<br>
+                    Graduando em Ciências da Computação (UNEB)</span>
                 </p>
             </div>
-
-            <div class="aboutItem" id="rightContent">
-                <div id="socialLinksContainer">
-                    <a href="https://github.com/bonfimwebdev" target="_blank"><img src="./img/github-icon.png" alt="Github icon"></a>
-                    <a href="https://linkedin.com/in/gabrielbmendes" target="_blank"><img src="./img/linkedin-icon.png" alt="Linkedin icon"></a>
-                    <a href="mailto:bonfimwebdev@gmail.com" target="_blank"><img src="./img/email-icon.png" alt="Email icon"></a>
-                </div>
+    
+            <div id="socialLinksContainer" class="sidebarItem">
+                <a href="https://github.com/bonfimwebdev" target="_blank"><img class="socialIcon" src="./img/github-icon.png" alt="Github icon"></a>
+                <a href="https://linkedin.com/in/gabrielbmendes" target="_blank"><img class="socialIcon" src="./img/linkedin-icon.png" alt="Linkedin icon"></a>
+                <a href="mailto:bonfimwebdev@gmail.com" target="_blank"><img class="socialIcon" src="./img/email-icon.png" alt="Email icon"></a>
             </div>
         </div>
 
-        <div id="portfolioContainer">
+        <div id="skillContainer" class="glassMorph sidebarInnerContainer">
+            <div id="innerSkillContainer">
+                <div class="skillWrapper">
+                HTML
+                <div class="outerSkillContainer">
+                    <div id="htmlContainer" class="innerSkillContainer"></div>
+                </div><br/>
+                </div>
+                
+                <div class="skillWrapper">
+                CSS
+                <div class="outerSkillContainer">
+                    <div id="cssContainer" class="innerSkillContainer"></div>
+                </div><br/>
+                </div>
+    
+                <div class="skillWrapper">
+                Bootstrap
+                <div class="outerSkillContainer">
+                    <div id="btstpContainer" class="innerSkillContainer"></div>
+                </div><br/>
+                </div>
+    
+                <div class="skillWrapper">
+                JavaScript
+                <div class="outerSkillContainer">
+                    <div id="jsContainer" class="innerSkillContainer"></div>
+                </div><br/>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-            <div class="portfolioItem darkerGlassMorph">
+    <main id="mainContainer">
+        <div id="portfolioContainer">
+            <div class="portfolioItem glassMorph">
                 <div class="innerPortfolioPicture" id="rihannaTributePicture">
                     <div class="hiddenPortfolioLinks">
-                        <div class="hiddenLinks">
-                            <a href="https://rihannatribute.netlify.app/" target="_blank">Acessar site</a>
+                        <div class="hiddenLinksContainer">
+                            <a class="hiddenLinks" href="https://rihannatribute.netlify.app/" target="_blank">Acessar site</a>
                         </div>
 
-                        <div class="hiddenLinks">
-                            <a href="https://github.com/bonfimwebdev/rihannatributepage" target="_blank">Ver código</a>
+                        <div class="hiddenLinksContainer">
+                            <a class="hiddenLinks" href="https://github.com/bonfimwebdev/rihannatributepage" target="_blank">Ver código</a>
                         </div>
                     </div>
                 </div>
@@ -77,15 +90,15 @@
                 </div>
             </div>
 
-            <div class="portfolioItem darkerGlassMorph">
+            <div class="portfolioItem glassMorph">
                 <div class="innerPortfolioPicture" id="animeflixPicture">
                     <div class="hiddenPortfolioLinks">
-                        <div class="hiddenLinks">
-                            <a href="https://animeflixbr.netlify.app/" target="_blank">Acessar site</a>
+                        <div class="hiddenLinksContainer">
+                            <a class="hiddenLinks" href="https://animeflixbr.netlify.app/" target="_blank">Acessar site</a>
                         </div>
 
-                        <div class="hiddenLinks">
-                            <a href="https://github.com/bonfimwebdev/animeflix" target="_blank">Ver código</a>
+                        <div class="hiddenLinksContainer">
+                            <a class="hiddenLinks" href="https://github.com/bonfimwebdev/animeflix" target="_blank">Ver código</a>
                         </div>
                     </div>
                 </div>
@@ -99,15 +112,15 @@
                 </div>
             </div>
 
-            <div class="portfolioItem darkerGlassMorph">
+            <div class="portfolioItem glassMorph">
                 <div class="innerPortfolioPicture" id="formularioPicture">
                     <div class="hiddenPortfolioLinks">
-                        <div class="hiddenLinks">
-                            <a href="https://formtrabalheconosco.netlify.app/" target="_blank">Acessar site</a>
+                        <div class="hiddenLinksContainer">
+                            <a class="hiddenLinks" href="https://formtrabalheconosco.netlify.app/" target="_blank">Acessar site</a>
                         </div>
 
-                        <div class="hiddenLinks">
-                            <a href="https://github.com/bonfimwebdev/formulario" target="_blank">Ver código</a>
+                        <div class="hiddenLinksContainer">
+                            <a class="hiddenLinks" href="https://github.com/bonfimwebdev/formulario" target="_blank">Ver código</a>
                         </div>
                     </div>
                 </div>
@@ -121,15 +134,15 @@
                 </div>
             </div>
 
-            <div class="portfolioItem darkerGlassMorph">
+            <div class="portfolioItem glassMorph">
                 <div class="innerPortfolioPicture" id="huddlePicture">
                     <div class="hiddenPortfolioLinks">
-                        <div class="hiddenLinks">
-                            <a href="https://frontendmentor-huddlelandingpage.netlify.app/" target="_blank">Acessar site</a>
+                        <div class="hiddenLinksContainer">
+                            <a class="hiddenLinks" href="https://frontendmentor-huddlelandingpage.netlify.app/" target="_blank">Acessar site</a>
                         </div>
 
-                        <div class="hiddenLinks">
-                            <a href="https://github.com/bonfimwebdev/hfmsinglelandingpage" target="_blank">Ver código</a>
+                        <div class="hiddenLinksContainer">
+                            <a class="hiddenLinks" href="https://github.com/bonfimwebdev/hfmsinglelandingpage" target="_blank">Ver código</a>
                         </div>
                     </div>
                 </div>
@@ -142,33 +155,6 @@
                     </p>
                 </div>
             </div>
-        </div>
-
-        <div id="socialContainer" class="glassMorph">
-            <div id="contactFormContainer">
-                <div class="contactFormItem">
-                    <span id="contactFormTitle">Deixe uma mensagem abaixo!</span><br/><br/>
-                </div>
-
-                <div class="contactFormItem">
-                    <form action="https://api.staticforms.xyz/submit" method="post">
-                        <input type="hidden" name="accessKey" value="f51e573d-fb02-4cf4-b12f-73c037ad2a1a"> 
-                        
-                        <label for="nomeContato">Nome</label><br/>
-                        <input type="text" name="name" required maxlength="30" minlength="2"><br/>
-                        
-                        <label for="emailContato">E-mail</label><br/>
-                        <input type="text" name="email"><br/>
-                        
-                        <label for="mensagemContato">Mensagem</label><br/>
-                        <textarea name="message"></textarea> <br/><br/>
-                        
-                        <!--<input type="hidden" name="redirectTo" value="https://example.com/contact/success">-->
-                        <button>Enviar mensagem</button>
-                    </form>
-                </div>
-            </div>
-
         </div>
     </main>
 
